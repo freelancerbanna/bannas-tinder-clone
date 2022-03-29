@@ -33,14 +33,14 @@ const AuthModal = ({ setShowModal, isSignup }) => {
   //
   //
   return (
-    <div className="absolute top-[100px] right-0 left-0 bg-white mr-auto ml-auto  w-[560px]  p-10 rounded-[10px]">
+    <div className="absolute top-[100px] right-0 left-0 bg-white mr-auto ml-auto  !max-w-[360px]  p-10 rounded-[10px]">
       <Button
         onClick={handleClick}
         className="flex items-center justify-center float-right !w-7 !h-7 !mr-[-45px] !mt-[-30px]"
       >
         <Cancel />
       </Button>
-      <h2 className="text-xl mb-2 font-black">
+      <h2 className="mb-2 text-xl font-black">
         {isSignup ? "CREATE ACCOUNT" : "LOG IN"}
       </h2>
       <p>By clicking you are agree to our terms and policies.</p>
@@ -94,7 +94,7 @@ const AuthModal = ({ setShowModal, isSignup }) => {
         </Button>
         <p className="text-[#882626] font-semibold py-2">{error}</p>
         <hr className="border-2" />
-        <h2 className="text-xl mb-2 font-black uppercase py-2">Get the app</h2>
+        <h2 className="py-2 mb-2 text-xl font-black uppercase">Get the app</h2>
       </form>
     </div>
   );
